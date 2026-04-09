@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Kami - Tirami</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: var(--radius-lg);
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 5% 4rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .badges-small {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge-sm {
+            background: rgba(67, 138, 42, 0.1);
+            color: var(--primary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .badge-accent {
+            background: rgba(244, 146, 22, 0.1);
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center;">
+                <img src="images/Logo Tirami.png" alt="Logo Tirami" class="brand-logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="produk.html" class="active">Produk</a>
+            <a href="index.html#keunggulan">Keunggulan</a>
+            <a href="index.html#cara-masak">Cara Masak</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <div class="header-right">
+            <a href="kontak.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <div class="page-hero">
+            <h1>Katalog Produk Tirami</h1>
+            <p class="text-gray" style="font-size: 1.2rem;">Pilih varian favoritmu. Semua sehat, semua lezat, terbuat
+                dari 100% jamur tiram pilihan berkualitas unggul.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/Produk 1.png" alt="Tirami Original" class="product-img">
+                <div class="badges-small">
+                    <span class="badge-sm badge-accent"><i class="fas fa-star"></i> Best Seller</span>
+                    <span class="badge-sm">100% Nabati</span>
+                </div>
+                <h3 class="product-title">Tirami Original Pouch</h3>
+                <p class="product-price">Rp 35.000 <span style="font-size: 0.8rem; color: gray; font-weight: 400;">/
+                        400g</span></p>
+                <p class="text-gray mb-large" style="flex-grow: 1;">Rasa gurih alami jamur tiram dengan balutan tepung
+                    renyah bertekstur juicy di dalam. Pilihan cerdas dan bergizi untuk hidangan harian seluruh anggota
+                    keluarga.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; justify-content:center;"><i
+                        class="fas fa-shopping-cart"></i> Masukkan Keranjang</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/produk 2.png   " alt="Tirami Spicy" class="product-img"
+                    style="border-radius: var(--radius-sm); object-fit: cover;">
+                <div class="badges-small">
+                    <span class="badge-sm badge-accent">Baru!</span>
+                    <span class="badge-sm">Level Pedas Sedang</span>
+                </div>
+                <h3 class="product-title">Tirami Spicy Fire</h3>
+                <p class="product-price">Rp 38.000 <span style="font-size: 0.8rem; color: gray; font-weight: 400;">/
+                        400g</span></p>
+                <p class="text-gray mb-large" style="flex-grow: 1;">Khusus bagi Anda pecinta pedas! Sensasi renyah di
+                    luar, juicy berserat di dalam, dengan bumbu racikan cabai asli Nusantara yang meresap sempurna ke
+                    dalam adonan.</p>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content:center;"><i
+                        class="fas fa-shopping-cart"></i> Masukkan Keranjang</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/produk 3.png" alt="Tirami Bites Salad" class="product-img"
+                    style="border-radius: var(--radius-sm); object-fit: cover;">
+                <div class="badges-small">
+                    <span class="badge-sm badge-accent">Menu Sehat</span>
+                    <span class="badge-sm">Rendah Kalori</span>
+                </div>
+                <h3 class="product-title">Tirami Bites (Untuk Salad)</h3>
+                <p class="product-price">Rp 42.000 <span style="font-size: 0.8rem; color: gray; font-weight: 400;">/
+                        350g</span></p>
+                <p class="text-gray mb-large" style="flex-grow: 1;">Varian potongan nugget bentuk bites mungil yang
+                    khusus kami rancang untuk disajikan bersama salad sehat favorit Anda. Tekstur ekstra kriuk dan pas
+                    untuk sekali hap.</p>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content:center;"><i
+                        class="fas fa-shopping-cart"></i> Masukkan Keranjang</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/produk 4.png" alt="Tirami Family Pack" class="product-img"
+                    style="border-radius: var(--radius-sm); object-fit: cover;">
+                <div class="badges-small">
+                    <span class="badge-sm badge-accent">Hemat</span>
+                    <span class="badge-sm">Cocok untuk Pesta</span>
+                </div>
+                <h3 class="product-title">Tirami Family Pack Besar</h3>
+                <p class="product-price">Rp 80.000 <span style="font-size: 0.8rem; color: gray; font-weight: 400;">/
+                        1Kg</span></p>
+                <p class="text-gray mb-large" style="flex-grow: 1;">Lebih hemat dengan kemasan besar 1 Kilogram! Solusi
+                    tepat untuk acara kumpul keluarga, bekal anak sekolah selama seminggu, maupun hidangan pesta yang
+                    sehat.</p>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content:center;"><i
+                        class="fas fa-shopping-cart"></i> Masukkan Keranjang</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="footer-logo">
+                <img src="images/Logo Tirami.png" alt="Logo Tirami" class="brand-logo-footer">
+            </div>
+            <p style="color: var(--text-gray); margin: 0;">&copy; 2024 Tirami. All rights reserved.</p>
+            <div class="footer-social" style="display: flex; gap: 1rem;">
+                <a href="#" style="color: var(--text-gray); font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="#" style="color: var(--text-gray); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

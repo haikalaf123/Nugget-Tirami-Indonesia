@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Tirami</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: var(--radius-lg);
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 0 5% 4rem;
+        }
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            object-fit: cover;
+            height: 100%;
+            max-height: 480px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .vision-mission {
+            padding: 4rem 5%;
+            background: var(--primary);
+            color: white;
+            border-radius: var(--radius-lg);
+            margin: 0 5% 4rem;
+        }
+
+        .vision-mission h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .vision-mission p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .vision-mission>div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="display:flex; align-items:center;">
+                <img src="images/Logo Tirami.png" alt="Logo Tirami" class="brand-logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html" class="active">Tentang Kami</a>
+            <a href="produk.html">Produk</a>
+            <a href="index.html#keunggulan">Keunggulan</a>
+            <a href="index.html#cara-masak">Cara Masak</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <div class="header-right">
+            <a href="kontak.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <div class="page-hero">
+            <h1>Perjalanan Tirami</h1>
+            <p class="text-gray" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Membawa kebaikan jamur ke
+                meja makan Anda, dengan rasa yang tak terlupakan dan kualitas terjamin.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="text-green mb-large" style="font-size: 2.5rem; font-weight: 800;">Inovasi Sehat<br>Berawal
+                    dari Alam</h2>
+                <p class="text-gray">Tirami didirikan di Indonesia dengan satu tujuan sederhana: membuat makanan sehat
+                    yang juga lezat. Kami memahami bahwa banyak orang kesulitan mencari alternatif <i>plant-based</i>
+                    (nabati) yang benar-benar menggugah selera.</p>
+                <p class="text-gray">Oleh karena itu, kami memanfaatkan jamur tiram pilihan yang kaya serat. Jamur tiram
+                    dikenal memiliki tekstur unik berserat mirip daging ayam, namun jauh lebih sehat, rendah lemak, dan
+                    sangat ramah lingkungan dalam proses penanamannya.</p>
+                <p class="text-gray">Proses produksi kami di pabrik modern menggunakan teknologi canggih untuk menjaga
+                    nutrisi jamur dan menciptakan lapisan tepung renyah (kriuk) yang sempurna. Kami percaya bahwa setiap
+                    gigitan Tirami memberikan kebahagiaan bagi Anda sekeluarga, tanpa rasa bersalah.</p>
+            </div>
+            <img src="images/oyster_mushrooms.png" alt="Jamur Tiram Tirami" class="about-img">
+        </div>
+
+        <div class="vision-mission">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div>
+                    <h2>Visi Kami</h2>
+                    <p>Menjadi pelopor produk makanan olahan lezat berbasis nabati di Indonesia yang mendukung gaya
+                        hidup sehat, praktis, dan berkelanjutan bagi semua generasi, tanpa kompromi pada rasa.</p>
+                </div>
+                <div>
+                    <h2>Misi Kami</h2>
+                    <p><i class="fas fa-check-circle" style="color: var(--secondary);"></i> Menyediakan produk olahan
+                        jamur premium yang kaya nutrisi dan dijangkau semua kalangan.<br><br>
+                        <i class="fas fa-check-circle" style="color: var(--secondary);"></i> Memperkenalkan pentingnya
+                        menjaga lingkungan melalui revolusi pilihan makanan berbahan nabati.<br><br>
+                        <i class="fas fa-check-circle" style="color: var(--secondary);"></i> Terus berinovasi secara
+                        berkelanjutan untuk menghasilkan varian rasa yang memanjakan lidah.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"
+            style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="footer-logo">
+                <img src="images/Logo Tirami.png" alt="Logo Tirami" class="brand-logo-footer">
+            </div>
+            <p style="color: var(--text-gray); margin: 0;">&copy; 2024 Tirami. All rights reserved.</p>
+            <div class="footer-social" style="display: flex; gap: 1rem;">
+                <a href="#" style="color: var(--text-gray); font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="#" style="color: var(--text-gray); font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
